@@ -22,7 +22,7 @@ splitURL = exampleURL.split("://");
 protocol = splitURL[0];
 if (protocol === "http") {
     console.log("This is a URL.");
-} else if (protocol === "https"); {
+} else if (protocol === "https") {
     console.log("This is a URL.")
 } else {
     console.log("This is not a URL.");

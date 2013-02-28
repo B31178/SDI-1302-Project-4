@@ -36,9 +36,10 @@ var tammetNumber = "333";
 parseInt("333", 10);
 console.log(tammetNumber);
 
-//  Fuzzy Match
-
-
+//  Number Formatting
+var myNum = 6;
+myNum.length = 3;
+console.log(myNum);
 
 //  ARRAY METHODS
 

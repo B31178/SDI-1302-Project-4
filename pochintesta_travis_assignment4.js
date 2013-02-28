@@ -1,8 +1,8 @@
-
 //	Travis J. Pochintesta
 //	SDI 1302
 //	Project 4
 //  Function Library
+
 myLibrary = function () {
 
     //  STRING METHODS
@@ -14,7 +14,7 @@ myLibrary = function () {
         for (i = 0; i < words.length; i++) {
             words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
         }
-        finalTitle = words.join(" ");
+        title = words.join(" ");
         return title
     }
 
@@ -36,25 +36,24 @@ myLibrary = function () {
 
     //  String to Number
 
-    /*parseInt(number, radix) {
-            return number;
-        }*/
+    convertNum = function (number, radix) {
+        parseInt(number, radix);
+        return number
+    }
 
     //  Number Formatting
-    /*var formatNum = function (number) {
-            (formatNum.toFixed(2));
-            return number
-        }*/
+    var formatNum = function (number) {
+        return number.toFixed(2);
+    }
 
     //  ARRAY METHODS
 
     //  Smallest Value
 
-    var findMin = function (value, length) {
-        for (var i = 0; i < myArray.length; i++) {
-            if (i > myArray[i]) {
-                console.log(myArray[i]);
-                return value
+    var findMin = function (array) {
+        for (var i = 0; i < array.length; i++) {
+            if (i < array[i]) {
+                return array[i]
             }
         }
     }
@@ -76,8 +75,8 @@ myLibrary = function () {
 
         "titleCase": titleCase,
         "isUrl": isUrl,
-        /*"parseInt": parseInt,
-        "formatNum": formatNum,*/
+        "convertNum": convertNum,
+        "formatNum": formatNum,
         "findMin": findMin,
         "addNum": addNum,
 
@@ -91,7 +90,7 @@ var mixedArray = [1, "One", 2, "Two", 3, "Three", 5, "Five"];
 
 console.log(newLib.titleCase("this is my title."));
 console.log(newLib.isUrl("https://www.google.com"));
-/*console.log(newLib.parseInt("333", 10));
-console.log(newLib.formatNum(6));*/
-console.log(newLib.findMin(myArray, myArray.length));
+console.log(newLib.convertNum("333", 10));
+console.log(newLib.formatNum(6));
+console.log(newLib.findMin(myArray));
 console.log(newLib.addNum(mixedArray, 0));

@@ -37,9 +37,15 @@ parseInt("333", 10);
 console.log(tammetNumber);
 
 //  Number Formatting
-var myNum = 6;
-myNum.length = 3;
+var myNum = 6
+
+var formatNum = function (myNum, adjustLength) {
+	myNum = myNum + " ";
+	myNum.length = adjustLength;
+	return myNum
+}
 console.log(myNum);
+
 
 //  ARRAY METHODS
 

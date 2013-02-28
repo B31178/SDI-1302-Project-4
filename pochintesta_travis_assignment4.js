@@ -32,6 +32,9 @@ if (protocol === "http") {
 //  NUMBER METHODS
 
 //  String to Number
+var tammetNumber = "333";
+parseInt("333", 10);
+console.log(tammetNumber);
 
 //  Fuzzy Match
 

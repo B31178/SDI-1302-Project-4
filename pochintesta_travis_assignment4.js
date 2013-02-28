@@ -6,6 +6,7 @@
 
 //  STRING METHODS
 
+
 //  Title Case
 var heading = "my document title.";
 
@@ -31,24 +32,51 @@ if (protocol === "http") {
 
 //  NUMBER METHODS
 
+
 //  String to Number
 var tammetNumber = "333";
 parseInt("333", 10);
 console.log(tammetNumber);
 
-//  Number Formatting
-var myNum = 6
-
+//  Number Formatting !!!WRONG!!!
 var formatNum = function (myNum, adjustLength) {
 	myNum = myNum + " ";
 	myNum.length = adjustLength;
 	return myNum
 }
-console.log(myNum);
+console.log(formatNum(6,2));
 
 
 //  ARRAY METHODS
 
-//  Smallest Value
+
+//  Smallest Value  !!!WRONG!!!
+var myArray = [1, 2, 3, 5, 8, 13, 21];
+
+var findMin = function(value, length) {
+	for (var i = 0; i < myArray.length; i++) {
+		if (i > myArray[i]) {
+		console.log(myArray[i]);
+		return value
+		}
+	}	
+}
+
+console.log(findMin(myArray[i], myArray.length));
 
 //  Total Value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
